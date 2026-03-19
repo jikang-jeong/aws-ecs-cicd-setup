@@ -9,7 +9,7 @@ def hello():
     if random.random() < 0.8:
         return "Internal Server Error", 500
     hostname = socket.gethostname()[:12]
-    return render_template("index.html", message=f"CloudWatch alarm test - Task: {hostname}")
+    return render_template("index.html", message=f"CloudWatch alarmddd test - Task: {hostname}")
 
 
 @app.route("/health")
